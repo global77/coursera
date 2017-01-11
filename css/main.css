@@ -32,3 +32,6 @@ body{
 .navbar-brand{
 	margin-top: -5px;
 }
+#menu_control {
+	font-size: 26px;
+}
