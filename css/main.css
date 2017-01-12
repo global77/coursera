@@ -4,11 +4,14 @@ h1, h2, h3{
 }
 body{
 	color: yellow;
-	    background: radial-gradient(black 15%, transparent 16%) 0 0,
- radial-gradient(black 15%, transparent 16%) 8px 8px,
- radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
- radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-image: radial-gradient(black 15%, transparent 16%), radial-gradient(black 15%, transparent 16%), radial-gradient(rgba(255, 255, 255, 0.0980392) 15%, transparent 20%), radial-gradient(rgba(255, 255, 255, 0.0980392) 15%, transparent 20%);
+	background: radial-gradient(black 15%, transparent 16%) 0 0,
+				 	radial-gradient(black 15%, transparent 16%) 8px 8px,
+				 	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+				 	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-image: radial-gradient(black 15%, transparent 16%), 
+				    radial-gradient(black 15%, transparent 16%), 
+				    radial-gradient(rgba(255, 255, 255, 0.0980392) 15%, transparent 20%), 
+				    radial-gradient(rgba(255, 255, 255, 0.0980392) 15%, transparent 20%);
     background-position-x: 0px, 8px, 0px, 8px;
     background-position-y: 0px, 8px, 1px, 9px;
     background-size: 16px 16px;
@@ -17,8 +20,7 @@ body{
     background-attachment: initial, initial, initial, initial;
     background-origin: initial, initial, initial, initial;
     background-clip: initial, initial, initial, initial;
-    background-color: #282828;
-    background-color: #282828;
+    background-color: #272727;
     background-size: 16px 16px;
 }
 .social_section{	
@@ -34,4 +36,8 @@ body{
 }
 #menu_control {
 	font-size: 21px;
+}
+.btn_detail{
+	background: #282828;
+	color: red;
 }
