@@ -1,40 +1,3 @@
-
-<!--<!DOCTYPE html>
-<html>
-<head>
-    <title>Coursera test</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet"> </head>
-    <link href="css/main.css" rel="stylesheet"> 
-</head>
-<body>
-<div class="container">
-    <h1 class="" align="center"> Hi Coursera!!!</h1>
-    <div class="col-sm-4">
-        <img src="http://lorempixel.com/g/300/150/city" />
-        <p>1 col</p>
-        <div class="col-sm-4">1.1 subcol</div>
-        <div class="col-sm-4">1.2 subcol</div>
-        <div class="col-sm-4">1.3 subcol</div>
-    </div>
-    <div class="col-sm-4">
-        <img src="http://lorempixel.com/g/300/150/people" />
-        <p>2 col</p>
-        <div class="col-sm-4">2.1 subcol</div>
-        <div class="col-sm-4">2.2 subcol</div>
-        <div class="col-sm-4">2.3 subcol</div>
-    </div>
-    <div class="col-sm-4">
-        <img src="http://lorempixel.com/300/150/nature" />
-        <p>3 col</p>
-    </div>
-</div>
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
-http://eax.me/git-commands/-->
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -73,9 +36,9 @@ http://eax.me/git-commands/-->
 ================================================== -->
   <body>
     <div class="navbar-wrapper">
-      <div class="container">
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
+      <div class="container ">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container nav_container">
             <div class="navbar-header">
               <button id="btn_menu" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -116,10 +79,54 @@ http://eax.me/git-commands/-->
     </div>
     <div class="row">
       <div class="container content">
+        <div class="breadcrump_container">
+          <ul class="breadcrumb">
+            <li>                            
+              <a href="#">
+                <i class="fa fa-home fa-2x"></i>
+              </a>            
+            </li>
+            <li>
+                <a href="#">Category</a>
+            </li>
+            <li>
+                <a href="#">SubCategory</a>
+            </li >
+            <li class="">
+                PostName
+            </li>                        
+          </ul>
+        </div>  
         <div class="col-xs-9 left">
-          here col 9
+           <div class="thumbnail">
+              <img src="http://lorempixel.com/g/450/400/city" alt=" " class="img-responsive"/>
+              <div class="caption">                        
+                  <h3><a href="#">Post Number -1</a></h3>
+                  <p>Post Name -1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam ornare libero urna, id maximus purus convallis quis. </p>
+                  <a href="#" class="btn btn-success" >Read more <i class="fa fa-arrow-right"></i></a>
+              </div>
+          </div>
+          <?php
+           $txt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare libero urna, id maximus purus convallis quis. ";
+           for($i=0; $i<4; $i++){                   
+              print('   <div class="thumbnail">
+                          <img src="http://lorempixel.com/g/450/400/city" alt=" " class="img-responsive"/>
+                          <div class="caption">
+                              <h3><a href="#">Post Number '.$i.'</a></h3>
+                              <p>Post Name '.$txt.'</p>
+                              <a href="#" class="btn btn-success" >Read more <i class="fa fa-arrow-right"></i></a>
+                          </div>
+                      </div>');
+              $txt.="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "; 
+              } ?>         
+          <nav>
+              <ul class="pager">
+                  <li class="previous"><a href="#">&larr; Back</a></li>
+                  <li class="next"><a href="#">Forward &rarr;</a></li>
+              </ul>
+          </nav>         
         </div>
-        <div class="col-xs-3">
+        <div class="col-xs-3 sidebar">
           here col 3
         </div>
       </div>
